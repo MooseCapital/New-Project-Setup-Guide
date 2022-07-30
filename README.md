@@ -19,8 +19,8 @@ npm install webpack webpack-cli --save-dev
 13. create a folder named: "dist"
 14. inside dist folder create files named: index.html, style.css
 15. link the css and javascript inside the html file with:
-    <br /> link rel="stylesheet" href="style.css">
-    <br /> script src="main.js" defer></script>
+  <br>   <script src="myscript.js" defer></script>
+   <br>   <link rel="stylesheet" href="style.css">
 16. run: npm run watch, or npm run start, for the webpack live server, this builds the main.js file
 17. install eslint: 
 <br> npm install eslint --save-dev
@@ -35,3 +35,5 @@ npm run lint
 22. install prettier, we only need to run it for nice format at the end of the project
 <br>https://prettier.io/docs/en/install.html
 23. now we can start building our project
+24. when the projects finished and were ready to deploy on github pages, github looks in the src folder, but our webpack has packed it into the dist folder, so we use this guide so it looks there.
+<br> https://gist.github.com/cobyism/4730490
