@@ -37,3 +37,7 @@ npm run lint
 23. now we can start building our project
 24. when the projects finished and were ready to deploy on github pages, github looks in the src folder, but our webpack has packed it into the dist folder, so we use this guide so it looks there.
 <br> https://gist.github.com/cobyism/4730490
+25. install babel to transpile, so es6 javascript works with old browsers
+<br> https://babeljs.io/setup#installation
+<br> npm install --save-dev @babel/core @babel/preset-env babel-loader
+26. after following the guide, babel will work every time webpack saves on watch/server
